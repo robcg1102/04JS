@@ -95,6 +95,10 @@ img {
     width: 60px;
 }
 
+.btnSearch:hover {
+    transform: scale(1.1);
+}
+
 .ctrBtn {
     width: 70px;
     height: 15px;
