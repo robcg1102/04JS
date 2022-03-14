@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./images/poke.png" />
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="sideBox">
+        <div class="lightBox">
+          <div class="statusLight statusBlue" id="statusLight"></div>
+          <div class="tinyLight"></div>
+          <div class="tinyLight"></div>
+          <div class="tinyLight"></div>
+        </div>
+        <div class="boxImg">
+          <img
+            src="./images/black_screen.jpg"
+            alt="black_screen"
+            id="imageSrc"
+            width="150px"
+            height="150px"
+          />
+        </div>
+        <div class="control">
+          <input
+            type="button"
+            onclick="searchPoke()"
+            value="Buscar"
+            class="btnSearch"
+          />
+          <div class="select ctrBtn"></div>
+          <div class="start ctrBtn"></div>
+          <div class="pad">
+            <div class="sidePad"></div>
+            <div class="centerPad"></div>
+            <div class="sidePad"></div>
+          </div>
+        </div>
+        <div class="statusArea">
+          <div class="status">
+            <p id="statusPokemon"></p>
+          </div>
+          <input type="text" placeholder="Nombre pokémon" id="namePoke" />
+        </div>
+      </div>
+      <div class="centerPokedex"></div>
+      <div class="sideBox">
+        <div class="statsPoke">
+          <p id="typePoke"></p>
+          <p id="abilitiesPoke"></p>
+          <div class="boxAllStats">
+            <div id="hpStat"></div>
+            <div id="atkStat"></div>
+            <div id="defStat"></div>
+            <div id="spAtk"></div>
+            <div id="spDef"></div>
+            <div id="spdStat"></div>
+          </div>
+        </div>
+        <div class="blueBtnBox">
+          <div class="blueBtn"></div>
+          <div class="blueBtn"></div>
+          <div class="blueBtn"></div>
+          <div class="blueBtn"></div>
+          <div class="blueBtn"></div>
+          <div class="blueBtn"></div>
+          <div class="blueBtn"></div>
+          <div class="blueBtn"></div>
+          <div class="blueBtn"></div>
+          <div class="blueBtn"></div>
+        </div>
+        <div class="weightHeight">
+          <div class="hwStyle" id="heightPoke"></div>
+          <div class="hwStyle" id="weightPoke"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
